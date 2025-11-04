@@ -1,0 +1,60 @@
+
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+
+@tailwind utilities;
+
+/* 🌿 متغيرات الألوان */
+:root {
+  --color-primary: #1c5332; /* الأخضر */
+  --color-secondary: #f3b300; /* الذهبي */
+  --color-bg: #fffafa; /* الخلفية الفاتحة */
+  --color-text: #1c1c1c;
+}
+
+/* ⚙️ الأساس */
+body {
+  @apply font-sans text-[16px] leading-relaxed;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+/* ✨ العناوين */
+h1, h2, h3, h4 {
+  @apply font-bold;
+}
+
+/* 🔘 الأزرار العامة */
+button {
+  @apply transition-colors duration-200 rounded-md font-medium;
+}
+
+/* زرار رئيسي */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #164427;
+}
+
+/* زرار outlined */
+.btn-outline {
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: transparent;
+}
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* ✳️ اللوجو */
+.logo-text-green {
+  color: var(--color-primary);
+}
+.logo-text-gold {
+  color: var(--color-secondary);
+}

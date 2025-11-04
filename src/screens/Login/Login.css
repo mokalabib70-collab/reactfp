@@ -1,0 +1,413 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
+
+.login-container {
+  background-color: #fffafa;
+  overflow: hidden;
+  width: 100%;
+  min-height: 1024px;
+  position: relative;
+}
+
+/* الخلفية */
+.login-polygon {
+  position: absolute;
+  top: 0;
+  left: -150px;
+  width: 1836px;
+  height: 1253px;
+}
+
+/* الصورة الجانبية */
+.login-photo {
+  position: absolute;
+  top: calc(50% - 184px);
+  left: 1154px;
+  width: 264px;
+  height: 263px;
+}
+
+.verify-header {
+  display: flex;
+  width: 1332px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 16px;
+  left: 54px;
+}
+
+/* اللوجو */
+.verify-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateY(-1rem);
+  animation: fade-in 1s 0ms ease forwards;
+  opacity: 0;
+}
+
+.verify-logo-image {
+  width: 75px;
+  height: 74px;
+}
+.verify-logo-text {
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-size: 48px;
+  line-height: normal;
+}
+
+.verify-logo-text-truth {
+  font-weight: 700;
+  color: #395846;
+}
+
+.verify-logo-text-eye {
+  font-weight: 700;
+  color: #f3b300;
+}
+
+/* الناف بار */
+.login-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+ margin-right: 150px;
+  animation: fade-in 1s 200ms ease forwards;
+  opacity: 0;
+  z-index: 20;
+  margin-left: 40px;
+}
+
+.login-nav-text {
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000 !important; /* أبيض صريح */
+  font-size: 14px;
+  line-height: normal;
+  text-shadow: 0 0 8px rgba(0,0,0,0.5);
+   
+}
+.login-button {
+  background-color: transparent;
+  border: 1px solid #000; /* أبيض بدل أسود */
+  color: #000; /* كمان النص أبيض */
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+ 
+}
+
+.login-button:hover {
+  background-color: #fff;
+  color: #000; 
+}
+
+.main-content {
+  position: absolute;
+  top: calc(50% - 240px);
+  left: calc(50% - 402px);
+  width: 804px;
+  height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: fade-up 1s 400ms ease forwards;
+}
+
+.login-card {
+  background-color: #fffafa;
+  border-radius: 20px;
+  box-shadow: 0px 0px 14px #395846;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+  z-index: 3;
+  height: 550px;
+  margin-bottom: 60px; /* ارتفاع بسيط لتحت لو حبيتي */
+}
+
+.logincard-content {
+  display: flex;
+  height: 480px;
+  width: 491px;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 40px;
+}
+
+.login-title {
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: -0.5px;
+  line-height: 44px;
+  margin: 0;
+}
+
+.title-welcome {
+  font-weight: 500;
+  color: #212121;
+  letter-spacing: -0.18px;
+}
+
+.title-turth {
+  font-weight: 700;
+  color: #395846;
+  letter-spacing: -0.18px;
+}
+
+.title-eye {
+  font-weight: 700;
+  color: #f3b300;
+  letter-spacing: -0.18px;
+}
+
+.title-exclamation {
+  font-weight: 700;
+  color: #212121;
+  letter-spacing: -0.18px;
+}
+
+.title-subtitle {
+  font-weight: 500;
+  color: #212121;
+  letter-spacing: -0.18px;
+}
+
+.loginform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.form-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #9e9e9e;
+  border-radius: 6px;
+  padding: 0 12px;
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-weight: 300;
+  color: #636363cc;
+  font-size: 12px;
+  background-color: white;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #395846;
+  box-shadow: 0 0 0 1px #395846;
+}
+
+.input::placeholder {
+  color: #636363cc;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+.password-input {
+  padding-right: 48px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #636363cc;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.password-toggle:hover {
+  color: #212121;
+}
+
+.eye-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.form-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.form-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #9e9e9e;
+  border-radius: 4px;
+  cursor: pointer;
+  accent-color: #395846;
+}
+
+.checkbox-text {
+  font-weight: 300;
+  color: #616161;
+  font-size: 13px;
+  line-height: 22.5px;
+}
+
+.forgot-password {
+  background: none;
+  border: none;
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-weight: 300;
+  color: #616161;
+  font-size: 13px;
+  line-height: 22.5px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.forgot-password:hover {
+  color: #395846;
+}
+
+.loginterms-text {
+  font-size: 10px;
+  line-height: normal;
+  color: #636363cc;
+  margin: 0;
+}
+
+.terms-link {
+  color: #10493c;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+
+.terms-link:hover {
+  color: #395846;
+}
+
+.submit-button {
+  width: 300px;
+  height: 48px;
+  background-color: #1c5332;
+  border: none;
+  border-radius: 8px;
+  font-family: "Poppins", Helvetica, sans-serif;
+  font-weight: 700;
+  color: #fcfcfc;
+  font-size: 16px;
+  text-align: center;
+  line-height: 22.5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #10493c;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+/* ====== 📱 RESPONSIVE DESIGN ====== */
+
+/* للأجهزة المتوسطة (تابلت) */
+@media (max-width: 1024px) {
+  .verify-header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    left: 0;
+  }
+
+  .verify-logo-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .verify-logo-text {
+    font-size: 36px;
+  }
+
+  .login-nav {
+    margin: 0;
+    gap: 8px;
+  }
+
+  .main-content {
+    width: 90%;
+    left: 5%;
+    top: 25%;
+  }
+
+  .login-card {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+  }
+
+  .logincard-content {
+    width: 100%;
+    padding: 20px;
+    height: auto;
+  }
+
+  .login-photo {
+    display: none;
+  }
+}
+
+

@@ -1,0 +1,179 @@
+.main-page {
+  background-color: #fffafa;
+  width: 100%;
+  min-height: 1024px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fffafa;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+  padding: 0 58px;
+  animation: fade-in 1s ease forwards;
+  animation-delay: 0s;
+}
+
+.logo-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-image {
+  width: 75px;
+  height: 74px;
+}
+
+.logo-text {
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-size: 48px;
+  line-height: normal;
+  margin: 0;
+}
+
+.logo-truth {
+  font-weight: 700;
+  color: #1c5332;
+}
+
+.logo-eye {
+  font-weight: 700;
+  color: #f3b300;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.btn {
+  height: 40px;
+  padding: 0 16px;
+  border-radius: 8px;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #1c5332;
+  color: #1c5332;
+}
+
+.btn-outline:hover {
+  background-color: #1c5332;
+  color: white;
+}
+
+.btn-primary {
+  background-color: #1c5332;
+  color: #fcfcfc;
+}
+
+.btn-primary:hover {
+  background-color: rgba(28, 83, 50, 0.9);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 32px;
+    gap: 16px;
+  }
+
+  .logo-image {
+    width: 65px;
+    height: 65px;
+  }
+
+  .logo-text {
+    font-size: 36px;
+  }
+
+  .nav-buttons {
+    gap: 12px;
+  }
+
+  .btn {
+    height: 38px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile (<=768px) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 12px 20px;
+  }
+
+  .logo-container {
+    gap: 6px;
+  }
+
+  .logo-image {
+    width: 55px;
+    height: 55px;
+  }
+
+  .logo-text {
+    font-size: 28px;
+  }
+
+  .nav-buttons {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .btn {
+    font-size: 13px;
+    height: 36px;
+    padding: 0 12px;
+  }
+}
+
+/* Very Small Screens (<=480px) */
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 24px;
+  }
+
+  .logo-image {
+    width: 45px;
+    height: 45px;
+  }
+
+  .btn {
+    font-size: 12px;
+    height: 34px;
+  }
+
+  .nav-buttons {
+    gap: 6px;
+  }
+}

@@ -1,0 +1,415 @@
+.verify2-container {
+  background-color: #fffafa;
+  overflow: hidden;
+  width: 100%;
+  min-height: 1024px;
+  position: relative;
+}
+
+/* الخلفية */
+.verify2-polygon {
+  position: absolute;
+  top: 0;
+  left: -150px;
+  width: 1836px;
+  height: 1253px;
+}
+
+/* الصورة الجانبية */
+.verify2-photo {
+  position: absolute;
+  top: calc(50% - 184px);
+  left: 1154px;
+  width: 264px;
+  height: 263px;
+}
+
+/* الهيدر */
+.verify-header {
+  display: flex;
+  width: 1332px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 16px;
+  left: 54px;
+}
+
+/* اللوجو */
+.verify-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateY(-1rem);
+  animation: fade-in 1s 0ms ease forwards;
+  opacity: 0;
+}
+
+.verify-logo-image {
+  width: 75px;
+  height: 74px;
+}
+
+.verify-logo-text {
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-size: 48px;
+  line-height: normal;
+}
+
+.verify-logo-text-truth {
+  font-weight: 700;
+  color: #395846;
+}
+
+.verify-logo-text-eye {
+  font-weight: 700;
+  color: #f3b300;
+}
+
+/* الناف بار */
+.verify2-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateY(-1rem);
+  animation: fade-in 1s 200ms ease forwards;
+  opacity: 0;
+  color: #424242;
+}
+
+.verify2-nav-text {
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000 !important; 
+  font-size: 14px;
+  line-height: normal;
+  text-shadow: 0 0 8px rgba(0,0,0,0.5);
+  
+}
+.verify2-button {
+  background-color: transparent;
+  border: 1px solid #000; /* أبيض بدل أسود */
+  color: #000; /* كمان النص أبيض */
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+ 
+}
+
+.verify2-button:hover {
+  background-color: #fff;
+  color: #000; 
+}
+
+.verify2-main {
+  position: absolute;
+  top: calc(50% - 200px); /* الكارد ينزل لتحت شوية */
+  left: calc(50% - 402px);
+  width: 804px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-1rem);
+  animation: fade-in 1s 400ms ease forwards;
+  opacity: 0;
+}
+
+/* اللفافة حوالين الكارد */
+.verify2-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px; /* الكارد تحت */
+}
+
+/* الكارد نفسه */
+.verify2-card {
+  width: 100%;
+  background-color: #fffafa;
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  margin-bottom: 100px;
+  
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 565px;
+}
+
+.form-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.verify2-title {
+  width: 100%;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-weight: 700;
+  color: #212121;
+  font-size: 30px;
+  text-align: center;
+  line-height: normal;
+  margin: 0;
+}
+
+.password-strength-text {
+  width: 100%;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-weight: 400;
+  color: #616161;
+  font-size: 16px;
+  text-align: center;
+  line-height: 26px;
+  margin: 0;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 485px;
+  gap: 8px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-field {
+  width: 100%;
+  height: 48px;
+  padding: 0 48px 0 12px;
+  font-family: 'Poppins', Helvetica;
+  font-weight: 300;
+  color: #636363cc;
+  font-size: 12px;
+  border: 1px solid #9e9e9e;
+  border-radius: 6px;
+  background-color: transparent;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #395846;
+}
+
+.input-field::placeholder {
+  color: #636363cc;
+}
+
+.eye-button {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #636363cc;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s;
+}
+
+.eye-button:hover {
+  color: #212121;
+}
+
+.eye-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.confirm-button {
+  width: 300px;
+  height: 48px;
+  background-color: #1c5332;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.confirm-button:hover {
+  background-color: #164228;
+}
+
+.confirm-button-text {
+  font-family: 'Poppins', Helvetica;
+  font-weight: 700;
+  color: #fcfcfc;
+  font-size: 16px;
+  text-align: center;
+  line-height: 22.5px;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =================== RESPONSIVE DESIGN =================== */
+
+/* للأجهزة المتوسطة (تابلت تقريبًا) */
+@media (max-width: 1024px) {
+  .verify2-container {
+    min-height: auto;
+    padding-bottom: 100px;
+  }
+
+  .verify-header {
+    width: 90%;
+    left: 5%;
+  }
+
+  .verify2-photo {
+    display: none; /* نخفي الصورة الجانبية */
+  }
+
+  .verify2-main {
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+
+  .verify2-card {
+    width: 95%;
+    padding: 20px;
+    margin-top:50px;
+  }
+
+  .verify2-title {
+    font-size: 26px;
+  }
+
+  .password-strength-text {
+    font-size: 14px;
+  }
+
+  .confirm-button {
+    width: 250px;
+  }
+}
+
+/* للموبايلات */
+@media (max-width: 768px) {
+  .verify-header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    left: 0;
+  }
+
+  .verify-logo-text {
+    font-size: 36px;
+  }
+
+  .verify2-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .verify2-main {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    margin-top: 100px;
+  }
+
+  .verify2-card-wrapper {
+    margin-top: 0;
+    padding: 0 20px;
+  }
+
+  .verify2-card {
+    width: 100%;
+    padding: 24px;
+   
+  }
+
+  .form-container {
+    max-width: 100%;
+    gap: 24px;
+  }
+
+  .verify2-title {
+    font-size: 22px;
+  }
+
+  .input-field {
+    height: 44px;
+    font-size: 13px;
+  }
+
+  .confirm-button {
+    width: 100%;
+  }
+
+  .confirm-button-text {
+    font-size: 15px;
+  }
+}
+
+/* للموبايلات الصغيرة جدًا */
+@media (max-width: 480px) {
+  .verify-logo-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .verify-logo-text {
+    font-size: 28px;
+  }
+
+  .verify2-card {
+    padding: 16px;
+    border-radius: 10px;
+   
+  }
+
+  .verify2-title {
+    font-size: 20px;
+  }
+
+  .input-field {
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .confirm-button {
+    height: 44px;
+  }
+
+  .confirm-button-text {
+    font-size: 14px;
+  }
+}
+
+

@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700");
+
+.verify3-container {
+  background-color: #fffafa;
+  overflow: hidden;
+  width: 100%;
+  min-height: 1024px;
+  position: relative;
+}
+
+/* الخلفية */
+.verify3-polygon {
+  position: absolute;
+  top: 0;
+  left: -150px;
+  width: 1836px;
+  height: 1253px;
+}
+
+/* الصورة الجانبية */
+.verify3-photo {
+  position: absolute;
+  top: calc(50% - 184px);
+  left: 1154px;
+  width: 264px;
+  height: 263px;
+}
+
+/* الهيدر */
+.verify-header {
+  display: flex;
+  width: 1332px;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 16px;
+  left: 54px;
+}
+
+/* اللوجو */
+.verify-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateY(-1rem);
+  animation: fade-in 1s 0ms ease forwards;
+  opacity: 0;
+}
+
+.verify-logo-image {
+  width: 75px;
+  height: 74px;
+}
+
+.verify-logo-text {
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-size: 48px;
+  line-height: normal;
+}
+
+.verify-logo-text-truth {
+  font-weight: 700;
+  color: #395846;
+}
+
+.verify-logo-text-eye {
+  font-weight: 700;
+  color: #f3b300;
+}
+
+/* الناف بار */
+.verify3-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateY(-1rem);
+  animation: fade-in 1s 200ms ease forwards;
+  opacity: 0;
+  color: #424242;
+}
+
+.verify3-nav-text {
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000 !important; 
+  font-size: 14px;
+  line-height: normal;
+  text-shadow: 0 0 8px rgba(0,0,0,0.5);
+  
+}
+.verify3-button {
+   background-color: transparent;
+  border: 1px solid #000; /* أبيض بدل أسود */
+  color: #000; /* كمان النص أبيض */
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+ 
+}
+
+.verify-button:hover {
+  background-color: #fff;
+  color: #000; 
+}
+
+.verify3-main {
+  position: absolute;
+  top: calc(50% - 200px); /* الكارد ينزل لتحت شوية */
+  left: calc(50% - 402px);
+  width: 804px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-1rem);
+  animation: fade-in 1s 400ms ease forwards;
+  opacity: 0;
+}
+
+/* اللفافة حوالين الكارد */
+.verify3-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -70px; /* الكارد تحت */
+}
+
+/* الكارد نفسه */
+.verify3-card {
+  width: 100%;
+  background-color: #fffafa;
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  margin-bottom: 100px;
+  
+}
+.form3-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 565px;
+}
+
+.form3-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.verify3-title {
+  width: 100%;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-weight: 700;
+  color: #212121;
+  font-size: 30px;
+  text-align: center;
+  line-height: normal;
+  margin: 0;
+}
+
+
+.verify3-description {
+  font-weight: 400;
+  color: #616161;
+  font-size: 20px;
+  text-align: center;
+  line-height: 26px;
+  margin: 0;
+}
+
+.verification-boxes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  width:60px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.gradient-input-container {
+  width: 73px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.gradient-input-container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 4px;
+  padding: 2px;
+  background: linear-gradient(142deg, rgba(243, 179, 0, 1) 0%, rgba(28, 83, 50, 1) 100%);
+  mask-composite: exclude;
+  pointer-events: none;
+  box-shadow: 0px 4px 12.2px #d5abf7;
+}
+
+.verification-input {
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  font-weight: 400;
+  color: #212121;
+  font-size: 20px;
+  line-height: normal;
+  border: 2px solid #9e9e9e;
+  border-radius: 8px;
+  background-color: white;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.verification-input:focus {
+  border-color: #395846;
+}
+
+.gradient-input {
+  border: none;
+  background-color: white;
+}
+
+.gradient-input:focus {
+  border: none;
+}
+
+.verify3x-button {
+  width: 300px;
+  height: 48px;
+  background-color: #1c5332;
+  border-radius: 8px;
+  border: none;
+  font-weight: 700;
+  color: #fcfcfc;
+  font-size: 16px;
+  text-align: center;
+  line-height: 22.5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.verify3x-button:hover {
+  background-color: rgba(28, 83, 50, 0.9);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* 📱 Responsive for tablets and mobiles */
+/* 📱 Responsive for tablets and mobiles */
+@media (max-width: 1024px) {
+  .verify3-photo {
+    display: none; /* نخفي الصورة الجانبية على الشاشات الصغيرة */
+  }
+
+  .verify3-container {
+    min-height: auto;
+    padding-bottom: 80px;
+  }
+
+  .verify3-main {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    width: 90%;
+    margin: 100px auto 0 auto;
+  }
+
+  .verify3-card {
+    width: 100%;
+    padding: 24px;
+    margin-top: 85px ;
+  }
+
+  .form3-container,
+  .form3-inner {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .verify3-title {
+    font-size: 24px;
+  }
+
+  .verify3-description {
+    font-size: 16px;
+    line-height: 22px;
+    padding: 0 10px;
+  }
+
+  .verification-boxes {
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gradient-input-container {
+    width: 55px;
+    height: 60px;
+  }
+
+  .verification-input {
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+  }
+
+  .verify3x-button {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 24px;
+  }
+
+  .verify-header {
+    width: 100%;
+    left: 0;
+    top: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .verify-logo-text {
+    font-size: 32px;
+  }
+
+  .verify3-nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: -10px;
+
+  }
+
+  .verify3-nav-text {
+    font-size: 13px;
+  }
+  
+}
+
+/* 📱 Smaller phones */
+@media (max-width: 600px) {
+  .verify3-title {
+    font-size: 20px;
+  }
+
+  .verify3-description {
+    font-size: 14px;
+  }
+
+  .gradient-input-container {
+    width: 45px;
+    height: 50px;
+  }
+
+  .verification-input {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .verify3x-button {
+    font-size: 14px;
+    height: 44px;
+  }
+}
+
+

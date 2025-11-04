@@ -1,0 +1,12 @@
+.card {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  animation: fade-in 1s 400ms ease forwards;
+  opacity: 0;
+  transform: translateY(-1rem);
+  
+}

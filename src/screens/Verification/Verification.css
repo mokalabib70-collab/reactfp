@@ -1,0 +1,293 @@
+.verify-container {
+  background-color: #fffafa;
+  overflow: hidden;
+  width: 100%;
+  min-height: 1024px;
+  position: relative;
+}
+
+/* الخلفية */
+.verify-polygon {
+  position: absolute;
+  top: 0;
+  left: -150px;
+  width: 1836px;
+  height: 1253px;
+}
+
+/* الصورة الجانبية */
+.verify-photo {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 260px;
+  height: 260px;
+  object-fit: contain;
+}
+
+/* الهيدر */
+.verify-header {
+  display: flex;
+  width: 1332px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 16px;
+  left: 54px;
+}
+
+/* اللوجو */
+.verify-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateY(-1rem);
+  animation: fade-in 1s 0ms ease forwards;
+  opacity: 0;
+}
+
+.verify-logo-image {
+  width: 75px;
+  height: 74px;
+}
+
+.verify-logo-text {
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-size: 48px;
+  line-height: normal;
+}
+
+.verify-logo-text-truth {
+  font-weight: 700;
+  color: #395846;
+}
+
+.verify-logo-text-eye {
+  font-weight: 700;
+  color: #f3b300;
+}
+
+/* الناف بار */
+.verify-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transform: translateY(-1rem);
+  animation: fade-in 1s 200ms ease forwards;
+  opacity: 0;
+  color: #424242;
+}
+
+.verify-nav-text {
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000 !important; 
+  font-size: 14px;
+  line-height: normal;
+  text-shadow: 0 0 8px rgba(0,0,0,0.5);
+  
+}
+.verify-button {
+  background-color: transparent;
+  border: 1px solid #000; /* أبيض بدل أسود */
+  color: #000; /* كمان النص أبيض */
+  border-radius: 8px;
+  padding: 6px 14px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+ 
+}
+
+.verify-button:hover {
+  background-color: #fff;
+  color: #000; 
+}
+
+/* المين */
+.verify-main {
+  position: absolute;
+  top: calc(50% - 200px); /* الكارد ينزل لتحت شوية */
+  left: calc(50% - 402px);
+  width: 804px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-1rem);
+  animation: fade-in 1s 400ms ease forwards;
+  opacity: 0;
+}
+
+/* اللفافة حوالين الكارد */
+.verify-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px; /* الكارد تحت */
+}
+
+/* الكارد نفسه */
+.verify-card {
+  background-color: #fffafa;
+  border-radius: 16px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 40px;
+  margin-top: -40px;
+  
+}
+
+/* المحتوى داخل الكارد */
+.verify-card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* الفورم */
+.verify-form-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+/* العنوان */
+.verify-title {
+  width: 100%;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-weight: 700;
+  color: #212121;
+  font-size: 40px;
+  text-align: center;
+  line-height: normal;
+  margin: 0;
+}
+
+/* الوصف */
+.verify-description {
+  width: 100%;
+  font-family: 'Poppins', Helvetica, sans-serif;
+  font-weight: 400;
+  color: #616161;
+  font-size: 20px;
+  text-align: center;
+  line-height: 26px;
+  margin: 0;
+}
+
+/* الإدخال */
+.verify-input-wrapper {
+  width: 485px;
+  height: 48px;
+}
+
+/* الزرار */
+.verify-button-wrapper {
+  width: 300px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+}
+.verify-btn{
+  width: 300px;
+  height: 48px;
+  background-color: #1c5332;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.forgot-password {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.forgot-link {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #395846;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.forgot-link:hover {
+  color: #f3b300;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none
+  }
+}
+@media (max-width: 1024px) {
+  .verify-photo {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .verify-logo-text {
+    font-size: 32px;
+  }
+
+  .verify-logo-image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .verify-title {
+    font-size: 28px;
+  }
+
+  .verify-description {
+    font-size: 16px;
+  }
+
+  .verify-card {
+    padding: 24px;
+     
+  }
+
+  .verify-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .verify-title {
+    font-size: 24px;
+  }
+
+  .verify-description {
+    font-size: 14px;
+  }
+
+  .verify-card {
+    width: 95%;
+    padding: 20px;
+     
+  }
+
+  .verify-logo-text {
+    font-size: 28px;
+  }
+
+  .verify-logo-image {
+    width: 50px;
+    height: 50px;
+  }
+}
