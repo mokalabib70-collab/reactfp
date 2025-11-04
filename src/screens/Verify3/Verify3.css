@@ -70,14 +70,14 @@
 
 /* الناف بار */
 .verify3-nav {
-  display: inline-flex;
+ display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   transform: translateY(-1rem);
   animation: fade-in 1s 200ms ease forwards;
   opacity: 0;
-  color: #424242;
-   margin-right: 50px;
+  z-index: 20;
+  margin-right: 80px;
 }
 
 .verify3-nav-text {
@@ -388,6 +388,7 @@
     height: 44px;
   }
 }
+
 
 
 
