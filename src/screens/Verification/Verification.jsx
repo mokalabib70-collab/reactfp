@@ -36,7 +36,7 @@ export const Verification = () => {
         <nav className="verify-nav">
           <div className="verify-nav-text">No Account yet?</div>
               <Link to="/signup">
-                         <Button className="verify-button">Sign Up</Button>
+                         <button className="verify-button">Sign Up</button>
                        </Link>       
 
         </nav>
@@ -69,4 +69,5 @@ export const Verification = () => {
     </div>
   );
 };
+
 
