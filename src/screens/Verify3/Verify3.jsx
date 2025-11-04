@@ -44,7 +44,7 @@ export const Verify3 = () => {
         <nav className="verify3-nav">
           <div className="verify3-nav-text">No Account yet?</div>
               <Link to="/signup">
-                         <Button className="verify3-button">Sign Up</Button>
+                         <button className="verify3-button">Sign Up</button>
                        </Link>       
         </nav>
       </header>
@@ -97,3 +97,4 @@ export const Verify3 = () => {
    
   );
 };
+
