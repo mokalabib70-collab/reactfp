@@ -28,7 +28,7 @@ export const Verification = () => {
           />
 
           <div className="verify-logo-text">
-            <span className="verify-logo-text-truth">Turth</span>
+            <span className="verify-logo-text-truth">Truth</span>
             <span className="verify-logo-text-eye">Eye</span>
           </div>
         </div>
@@ -69,3 +69,4 @@ export const Verification = () => {
     </div>
   );
 };
+
