@@ -75,6 +75,7 @@
   animation: fade-in 1s 200ms ease forwards;
   opacity: 0;
   color: #424242;
+   margin-right: 50px;
 }
 
 .verify2-nav-text {
@@ -411,5 +412,6 @@
     font-size: 14px;
   }
 }
+
 
 
