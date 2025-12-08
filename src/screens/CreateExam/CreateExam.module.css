@@ -1,0 +1,610 @@
+ @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700|Inter:500");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+
+.container {
+    background-color: #fffafa;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  z-index: 3;
+  background-color: #fffafa;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 56px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoImage {
+  width: 75px;
+  height: 74px;
+}
+
+.logoText {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.logoTextBold {
+  font-weight: 700;
+  color: #1c5332;
+}
+
+.logoTextYellow {
+  font-weight: 700;
+  color: #f3b300;
+}
+
+.userInfo {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.userAvatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.userName {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #1c5332;
+  font-size: 24px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 256px;
+  height: calc(100vh - 100px);
+  z-index: 4;
+  background-color: #1c5332;
+}
+
+.sidebarNav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+  padding-top: 128px;
+  padding-right: 40px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 176px;
+  height: 32px;
+  padding: 0 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.navItemActive {
+  border-radius: 5px;
+  box-shadow: 0px 0px 8px #f3b300;
+  border: 1px solid transparent;
+  background: linear-gradient(#1c5332, #1c5332) padding-box,
+              linear-gradient(270deg, rgba(243, 179, 0, 1) 0%, rgba(28, 83, 50, 1) 100%) border-box;
+}
+
+.navItemContent {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.navItemText {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #fffafa;
+  font-size: 16px;
+  white-space: nowrap;
+}  
+
+/* Main Content */
+ .main {
+  margin-left: 256px;
+  padding-top: 100px;
+  padding-left: 56px;
+  padding-right: 56px;
+  padding-bottom: 32px;
+}
+
+.mainHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1104px;
+  height: 48px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+  opacity: 0;
+  transform: translateY(-16px);
+  animation: fadeIn 1s ease forwards;
+}
+
+.mainTitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #1c2933;
+  font-size: 20px;
+}
+
+.addButton {
+  height: 48px;
+  background-color: #1c5332;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addButton:hover {
+  background-color: rgba(28, 83, 50, 0.9);
+}
+
+.addButtonText {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #fffafa;
+  font-size: 20px;
+} 
+
+/* Card */
+ .cardWrapper {
+  width: 100%;
+  max-width: 1104px;
+  opacity: 0;
+  transform: translateY(-16px);
+  animation: fadeIn 1s ease forwards 0.2s;
+}
+
+.card {
+  background-color: #fffafa;
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  padding: 32px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.formSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #1c2933;
+  font-size: 20px;
+}
+
+.input {
+  height: 48px;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px #9e9e9e;
+  border: none;
+  padding: 0 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  outline: none;
+}
+
+.select {
+  height: 48px;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px #9e9e9e;
+  border: none;
+  padding: 0 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #bebebe;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+}
+.input:focus,
+.select:focus,
+.realInput:focus,
+.realNumberInput:focus {
+  border-color: #1c5332;
+}
+
+/* ===== Form Row ===== */
+ .formRow {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.formColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 200px;
+}
+
+.labelSmall {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c2933;
+} 
+
+/* ===== Date & Time Inputs ===== */
+ .dateInput,
+.timeInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  padding: 10px 16px;
+  background-color: white;
+  width: 100%;
+}
+
+.realInput {
+  border: none;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+}
+
+.realInput::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.realNumberInput {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-size: 14px;
+  outline: none;
+  background-color: white;
+} 
+
+/* Remove number input arrows */
+ .realNumberInput::-webkit-inner-spin-button,
+.realNumberInput::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.realNumberInput:focus,
+.realInput:focus {
+  border-color: #1c5332;
+}  
+
+/* Question Cards */
+ .cardquesWrapper {
+  width: 100%;
+  max-width: 1104px;
+  margin-top: 16px;
+  opacity: 0;
+  transform: translateY(-16px);
+  animation: fadeIn 1s ease forwards 0.2s;
+}
+
+ .cardques {
+  background-color: #fffafa; 
+  border-radius: 15px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  padding: 24px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cardques:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.cardquesContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formquesSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formquesField {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.queslabel {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #1c2933;
+}
+
+.quesformTextarea {
+  min-height: 60px;
+  padding: 10px 16px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  resize: vertical;
+  font-family: 'Poppins', sans-serif;
+}
+
+.quesformRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.quesformColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 200px;
+}
+
+.queslabelSmall {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c2933;
+}
+
+.quesselect,
+.quesrealNumberInput {
+  height: 44px;
+  padding: 0 12px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #dcdcdc;
+  outline: none;
+  background-color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.quesselect:focus,
+.quesrealNumberInput:focus,
+.quesformTextarea:focus {
+  border-color: #1c5332;
+  box-shadow: 0 0 2px #1c5332;
+}
+.optionsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.optionItem {
+  width: 100%;
+}
+
+.optionInput {
+  height: 40px;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px #9e9e9e;
+  border: none;
+  padding: 0 16px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  outline: none;
+}
+.saveBtn {
+  margin-top: 10px;
+  background-color: #11873c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.2s ease;
+  width: fit-content;
+}
+
+.saveBtn:hover {
+  background-color: #0e5e2b;
+}
+.essayWrapper {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.essayTextarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  resize: vertical;
+  font-size: 14px;
+}  
+/* ===== Saved Actions (Score + Edit + Delete) ===== */
+    
+
+/* .scoreText {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1c5332;
+} */
+
+.actionButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.editBtn,
+.deleteBtn {
+  height: 36px;
+  width: 36px;
+  border: none;
+  border-radius: 50%;
+  color: #fffafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  font-size: 16px;
+}
+
+.editBtn:hover {
+  background-color: #0e5e2b;
+}
+
+.deleteBtn {
+  background-color: #d32f2f;
+}
+
+.deleteBtn:hover {
+  background-color: #a02727;
+}  
+
+/* تنسيق الـ radio buttons بعد الحفظ */
+ .optionsWrapper input[type="radio"] {
+  margin-right: 8px;
+  accent-color: #1c5332;
+}   
+
+/* Essay saved style */
+ .essaySaved {
+  padding: 12px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  font-weight: 500;
+  color: #1c5332;
+}
+
+
+ .savedActionsRow {
+  display: flex;        
+  gap: 8px;
+  align-items: center;    
+  justify-content: flex-end;
+  margin-top: 0; 
+} 
+
+
+.savedActionsRow .scoreText {
+  font-weight: 600;
+  color: #1c5332;
+  font-size: 16px;
+}
+
+.savedActionsRow button {
+  height: 36px;
+  width: 36px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.savedActionsRow .editBtn {
+  background-color: #11873c;
+  color: #fffafa;
+  
+}
+
+.savedActionsRow .editBtn:hover {
+  background-color: #0e5e2b;
+}
+
+.savedActionsRow .deleteBtn {
+  background-color: #d32f2f;
+  color: #fffafa;
+}
+
+.savedActionsRow .deleteBtn:hover {
+  background-color: #a02727;
+}  
+
+ 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,399 @@
+.profile-details-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  max-width: 877.5px;
+  margin: 0 auto;
+  padding: 0 16px;
+  animation: fadeIn 1s 0.2s ease forwards;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.profile-header {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.profile-avatar-container {
+  position: relative;
+  width: 115px;
+  height: 117.5px;
+}
+
+.profile-avatar-edit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.profile-avatar-edit-icon {
+  width: 12px;
+  height: 12px;
+  color: #666;
+}
+
+.profile-avatar {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-name {
+  font-family: 'Poppins', Helvetica;
+  font-weight: 600;
+  color: #1c2933;
+  font-size: 24px;
+}
+
+.profile-role,
+.profile-department {
+  font-family: 'Poppins', Helvetica;
+  font-weight: 400;
+  color: #424242;
+  font-size: 18px;
+}
+
+.profile-employee-id,
+.profile-joined {
+  font-family: 'Poppins', Helvetica;
+  font-weight: 400;
+  color: #424242;
+  font-size: 15px;
+}
+
+.profile-employee-id span {
+  font-weight: 600;
+}
+
+.profile-edit-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.profile-edit-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+}
+
+.profile-sections-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+}
+
+.profile-sections-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40px;
+  position: relative;
+}
+
+.profile-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+  animation: fadeIn 1s ease forwards;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+.profile-section:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.profile-section:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.profile-section:nth-child(3) {
+  animation-delay: 0.8s;
+}
+
+.profile-section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.profile-section-title-container {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.profile-section-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.profile-section-title {
+  font-family: 'Poppins', Helvetica;
+  font-weight: 600;
+  color: #1c2933;
+  font-size: 24px;
+}
+
+.profile-section-divider {
+  width: 100%;
+  height: 1.5px;
+}
+
+.profile-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.profile-fields-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.profile-field-small {
+  width: 100%;
+}
+
+.profile-field-medium {
+  width: 100%;
+}
+
+.profile-field-large {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .profile-field-small {
+    width: 278px;
+  }
+  
+  .profile-field-medium {
+    width: 276px;
+  }
+  
+  .profile-field-large {
+    width: 275px;
+  }
+}
+
+.profile-label {
+  font-family: 'Poppins', Helvetica;
+  font-weight: 500;
+  color: #424242;
+  font-size: 18px;
+}
+
+.profile-input-container {
+  position: relative;
+}
+
+.profile-input {
+  height: 48px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #9e9e9e;
+  padding: 0 12px;
+  font-family: 'Poppins', Helvetica;
+  font-weight: 500;
+  color: #616161;
+  font-size: 15px;
+}
+
+.profile-input:focus {
+  outline: none;
+  border-color: #1c5332;
+}
+
+.profile-calendar-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  color: #616161;
+}
+
+.profile-field-academic-small {
+  width: 100%;
+}
+
+.profile-field-academic-medium {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .profile-field-academic-small {
+    width: 422px;
+  }
+  
+  .profile-field-academic-medium {
+    width: 423px;
+  }
+}
+
+.research-interests-card {
+  width: 100%;
+  background-color: #fffafa;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 1s 1s ease forwards;
+  opacity: 0;
+  transform: translateY(-10px);
+}
+
+@media (min-width: 768px) {
+  .research-interests-card {
+    width: 422px;
+  }
+}
+
+.research-interests-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px;
+}
+
+.research-interests-title {
+  font-family: 'Poppins', Helvetica;
+  font-weight: 600;
+  color: #1c2933;
+  font-size: 20px;
+  text-align: center;
+}
+
+.research-interests-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.research-interest-badge {
+  background-color: #dbeafe;
+  color: #294ab4;
+  font-family: 'Poppins', Helvetica;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 8px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.security-section {
+  animation-delay: 1.2s;
+}
+
+.security-button {
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #1c5332;
+  color: #1c5332;
+  background: transparent;
+  font-family: 'Poppins', Helvetica;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.security-button:hover {
+  background-color: #1c5332;
+  color: white;
+}
+
+.profile-main-edit-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.profile-main-edit-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.profile-save-button {
+  width: 100%;
+  height: 48px;
+  background-color: #1c5332;
+  color: #fffafa;
+  border-radius: 10px;
+  border: none;
+  font-family: 'Poppins', Helvetica;
+  font-weight: 600;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.profile-save-button:hover {
+  background-color: rgba(28, 83, 50, 0.9);
+}
+
+@media (min-width: 768px) {
+  .profile-save-button {
+    width: 527px;
+  }
+}
