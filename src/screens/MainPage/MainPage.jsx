@@ -26,8 +26,12 @@ export const MainPage = () => {
           <Link to="/signup">
     <button className="btn btn-primary">Sign up</button>
   </Link>
+          <Link to="/doctor-profile">
+  <button className="btn btn-primary">Doctor-Profile</button>
+</Link>
         </nav>
       </header>
     </div>
   );
+
 };
