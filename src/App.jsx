@@ -1,13 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { MainPage } from "./screens/MainPage/MainPage";
 import { SignUp } from "./screens/SignUp/SignUp";
 import { Login } from "./screens/Login/Login";
 import { Verification } from "./screens/Verification/Verification";
 import { Verify2} from "./screens/Verify2/Verify2";
 import { Verify3} from "./screens/Verify3/Verify3";
-
-
+import DoctorProfile from "./screens/DoctorProfile/DoctorProfile";
+import  EmptyExam  from "./screens/EmptyExam/EmptyExam";
+import  {CreateExam}  from "./screens/CreateExam";
 export const App = () => {
   return (
     <Router>
@@ -18,6 +19,10 @@ export const App = () => {
         <Route path="/verification" element={<Verification />} />
         <Route path="/verify2" element={<Verify2 />} />
         <Route path="/verify3" element={<Verify3 />} />
+        <Route path="/doctor-profile" element = {<DoctorProfile />} />
+       <Route path="/exams" element = {<EmptyExam />} />
+       <Route path="/createexams" element = {<CreateExam />} />
+       
       </Routes>
     </Router>
   );
