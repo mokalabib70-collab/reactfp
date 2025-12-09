@@ -9,6 +9,7 @@ import { Verify3} from "./screens/Verify3/Verify3";
 import DoctorProfile from "./screens/DoctorProfile/DoctorProfile";
 import  EmptyExam  from "./screens/EmptyExam/EmptyExam";
 import  {CreateExam}  from "./screens/CreateExam";
+import { Reports } from "./screens/Reports";
 export const App = () => {
   return (
     <Router>
@@ -22,6 +23,7 @@ export const App = () => {
         <Route path="/doctor-profile" element = {<DoctorProfile />} />
        <Route path="/exams" element = {<EmptyExam />} />
        <Route path="/createexams" element = {<CreateExam />} />
+       <Route path="/reports" element = {<Reports />} />
        
       </Routes>
     </Router>
