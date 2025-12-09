@@ -1,0 +1,20 @@
+.reports-container {
+  min-width: 1440px;
+  min-height: 1024px;
+  background-color: #fffafa;
+  display: flex;
+  flex-direction: column;
+}
+
+.reports-content {
+  display: flex;
+  flex: 1;
+}
+
+.reports-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 56px;
+  gap: 32px;
+}
