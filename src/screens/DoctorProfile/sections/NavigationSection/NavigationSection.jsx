@@ -13,7 +13,7 @@ import "./NavigationSection.css";
 const navigationItems = [
   { icon: LayoutDashboardIcon, label: "Dashboard" },
   { icon: FileTextIcon, label: "Exams", path: "/exams" },
-  { icon: BarChart3Icon, label: "Reports" },
+  { icon: BarChart3Icon, label: "Reports",  path: "/reports" },
   { icon: UsersIcon, label: "Courses" },
   { icon: MessageSquareIcon, label: "Chat" },
 ];
@@ -56,3 +56,4 @@ export default function NavigationSection() {
     </nav>
   );
 }
+
