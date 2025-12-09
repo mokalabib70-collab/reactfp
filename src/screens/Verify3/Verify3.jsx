@@ -88,7 +88,7 @@ export const Verify3 = () => {
                 </div>
               </div>
 
-              <Button className="verify3x-button">Verify</Button>
+              <button className="verify3x-button">Verify</button>
             </div>
             </Card>
           </div>
@@ -97,4 +97,5 @@ export const Verify3 = () => {
    
   );
 };
+
 
